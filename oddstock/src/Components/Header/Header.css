@@ -1,0 +1,10 @@
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(25,25,25);
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(78,160,255);
+}
