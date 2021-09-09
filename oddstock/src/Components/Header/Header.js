@@ -1,6 +1,7 @@
 import './Header.css';
 import React from 'react';
-import { Navbar,Nav,Container} from 'react-bootstrap';
+import { Navbar,Nav,Container , Image} from 'react-bootstrap';
+import logo from '../../images/logo.png'
 //import LockIcon from '@material-ui/icons/Lock';
 //import LockOpenIcon from '@material-ui/icons/LockOpen';
 
@@ -8,7 +9,7 @@ export default function Header(porps) {
     return (
             <Navbar collapseOnSelect expand="lg" bg="light" className="top-fixed">
                 <Container fluid>
-                <Navbar.Brand href="#home">Odd-Stock</Navbar.Brand>
+                <Navbar.Brand href="#home"><Image  className="img" src={logo}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="justify-content-md-end text-center me-auto w-100">
