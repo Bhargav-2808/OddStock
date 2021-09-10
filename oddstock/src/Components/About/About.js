@@ -12,7 +12,7 @@ const About = () => {
       <Container fluid>
         <Row className="mt-3">
           <Col lg={12}>
-            <h3 className="moving">You can try our Premium Feature by clicking on <span className="aboutHeader">Premium</span> button</h3>
+            <h3 className="moving" >You can try our Premium Feature by clicking on <span className="aboutHeader"> Premium </span> button</h3>
           </Col>
         </Row>
         <Row>
