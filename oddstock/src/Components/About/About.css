@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+.centerProperty{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutImage{
+    height: 450px;
+    width: 450px;
+}
+
+.aboutTitle{
+    color: #0179ff;
+    font-family: 'Besley', serif;
+    font-size: 40px;
+}
