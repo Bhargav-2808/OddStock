@@ -2,11 +2,12 @@
 .centerProperty{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .aboutImage{
     height: 320px;
-    width: 320px;
+    width: 90vw;
 }
 
 .aboutTitle{
