@@ -5,12 +5,33 @@
 }
 
 .aboutImage{
-    height: 450px;
-    width: 450px;
+    height: 320px;
+    width: 320px;
 }
 
 .aboutTitle{
     color: #0179ff;
     font-family: 'Besley', serif;
     font-size: 40px;
+}
+.aboutHeader{
+    color: #0179ff;
+    font-family: 'Besley', serif;
+    font-size: 12px;
+}
+h3{
+    font-size: 15px;
+}
+
+.moving{
+    -webkit-animation: mover 5s infinite  alternate;
+    animation: mover 5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-18rem); }
+}
+@keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(39rem); }
 }

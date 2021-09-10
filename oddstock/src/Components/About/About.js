@@ -10,13 +10,18 @@ const About = () => {
   return (
     <>
       <Container fluid>
+        <Row className="mt-3">
+          <Col lg={12}>
+            <h3 className="moving">You can try our Premium Feature by clicking on <span className="aboutHeader">Premium</span> button</h3>
+          </Col>
+        </Row>
         <Row>
           <Col md={6} className="centerProperty">
             <img src={about} alt="about" className="aboutImage" />
           </Col>
           <Col md={6} className="centerProperty">
             <div>
-            <h1 style={{marginTop:"7rem"}}>
+            <h1 style={{marginTop:"3rem"}}>
               <b>
                 <span className="aboutTitle">O</span>
               </b>
