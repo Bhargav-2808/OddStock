@@ -1,5 +1,6 @@
 import './Search.css';
-import SearchIcon from '@material-ui/icons/Search';
+
+import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import react from 'react'
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -16,11 +17,10 @@ const Search = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <form action="">
-                            <input type="search"/>
-                            <SearchIcon/>
-                            <a id="clear-btn">Clear</a>
-                        </form>
+                        <div className="search-form centerComponent mt-5">
+                            <input type="search"  className="search-input"/>
+                            <SearchRoundedIcon className="search-icon"/>
+                        </div>
                     </Col>
                 </Row>
             </Container>
