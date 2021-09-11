@@ -1,0 +1,29 @@
+.card{
+    border: 1px solid whitesmoke ;
+    border-radius: 15px ;
+    padding: 40px;
+    box-shadow: 0px 0px 20px 5px  rgba(136, 135, 135, 0.774);
+}
+
+.mainContainer{
+    width: 40%;
+}
+
+Button{
+    width: 100%;
+    background-color: #0179ff !important
+}
+
+Button:hover{
+    background-color: #0462ce !important
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContainer{
+        width: 100%;
+    }
+
+    .card{
+        padding: 20px;
+    }
+}
