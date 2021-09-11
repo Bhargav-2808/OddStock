@@ -7,3 +7,23 @@
 .searchTitle{
     font-family: 'Besley', serif;
 }
+
+
+.search-input{
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    height: 70px;
+    font-size: 18px;
+    box-shadow: 0 5px 30px rgb(0 120 255 / 20%);
+    padding: 15px 15px 15px 70px;
+    border-radius: 35px;
+    transition: width 0s ease-in;
+    background-position: 19px 19px;
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+    border-bottom-left-radius: 35px; 
+    border-bottom-right-radius: 35px;
+    background-image: url(../../images/searchIcon.svg);
+    width: 30rem;
+}
