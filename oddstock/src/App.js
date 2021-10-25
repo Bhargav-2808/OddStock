@@ -7,6 +7,7 @@ import Header from '../src/Components/Header/Header';
 import Search from "../src/Components/Search/Search";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
+import News from "./Components/News/News";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <SignUp/>
     <Login/>
     <Search/>
+    <News/>
     </>
   );
 }
