@@ -1,0 +1,3 @@
+a645d6723b8a4f42bd0ff76a67460c9d
+
+https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=a645d6723b8a4f42bd0ff76a67460c9d
