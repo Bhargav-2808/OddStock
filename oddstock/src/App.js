@@ -17,7 +17,7 @@ function App() {
     <SignUp/>
     <Login/>
     <Search/>
-    <News/>
+   {/*  <News/> */}
     </>
   );
 }
