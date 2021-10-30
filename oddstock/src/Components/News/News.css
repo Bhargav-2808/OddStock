@@ -1,4 +1,19 @@
-.newsImage{
+#newsImage{
+    margin: 0%;
+}
+
+#imageSection{
     display: flex;
-    justify-content: center;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 768px) {
+    #newsImage{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+
+    #imageSection{
+        justify-content: start;
+    }
 }
