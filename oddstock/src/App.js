@@ -14,8 +14,8 @@ function App() {
     <>
     <Header accountHolder="Dhruv" login={true}/>
     <About/>
-    <SignUp/>
-    <Login/>
+    {/* <SignUp/>
+    <Login/> */}
     <Search/>
     <News/>
     </>
