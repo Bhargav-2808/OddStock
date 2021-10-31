@@ -8,21 +8,21 @@ import { useState, useEffect } from "react";
 
 const Search = () => {
   const [Search, setSearch] = useState(["SBIN"]);
-  const [Stock, setStock] = useState(null);
-  useEffect(() => {
-    const fetchApi = async () => {
-      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&
-      symbol=BSE:${Search}&
-      outputsize=full&
-      apikey=demo=B2CB6L3XPS4OUJYK`;
-      const result = await fetch(url);
+  const [Stock, setStock] = useState([]);
 
-      const response = await result.json();
-      console.log(response);
-       setStock(response);
-    };
+  const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=BSE:${Search}&outputsize=&apikey=demo=B2CB6L3XPS4OUJYK`;
+    //const url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a645d6723b8a4f42bd0ff76a67460c9d`;
+  let fetchApi = async () => { 
+    let result = await fetch(url);
+    let response = await result.json();
+    setStock(response[ 'Time Series (Daily)' ]);
+    console.log(response["Time Series (Daily)"]);
+    
+  };
+   useEffect(() => {
+    
     fetchApi();
-  }, [Search]);
+   }, [Search]);
 
   return (
     <>
@@ -47,12 +47,12 @@ const Search = () => {
                   setSearch(event.targate.value);
                 }}
               />
-              {/* <Button 
+               <Button 
                 style={{ width: "5rem" }} 
                 
                 >
                 Search
-              </Button> */}
+              </Button> 
             </div>
           </Col>
         </Row>
@@ -62,12 +62,19 @@ const Search = () => {
         <p> No Data found</p>
       ) : (
         <>
-          <div className="">
-           
-              
-            
-     
-          </div>
+         <Container>
+           <Row>
+             <Col>
+              <div className="">
+                {
+                  
+                }
+
+              </div>
+             
+             </Col>
+           </Row>
+         </Container>
         </>
       )}
     </>

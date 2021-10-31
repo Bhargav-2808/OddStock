@@ -6,7 +6,7 @@ const News = () => {
 
     const [newsHeadline, setNewsHeadline] = useState([])
 
-    const api=`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a645d6723b8a4f42bd0ff76a67460c9d`
+    const api=`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a645d6723b8a4f42bd0ff76a67460c9d`;
 
     let  fetchNews=async()=>    {
         let apiData= await fetch(api);
