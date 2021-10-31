@@ -21,12 +21,12 @@ const News = () => {
     
 
     return (
-        <div className="container">
+        <div className="container my-5">
             <Card style={{overflow:"auto",height:"90vh"}}>
                 <Card.Body>
                     {
                         newsHeadline.map((element)=>{
-                            return <Container key={element.url} >
+                            return  <Container key={element.url}>
                                         <Row className="py-4">
                                             <Col>
                                                 <Card.Title>{element.title}</Card.Title>

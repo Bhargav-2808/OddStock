@@ -7,6 +7,23 @@
     justify-content: end;
 }
 
+/* ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(136, 136, 136, 0.603);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
+
 @media only screen and (max-width: 768px) {
     #newsImage{
         margin-top:10px;

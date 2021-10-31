@@ -7,31 +7,26 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Footer = () => {
     return (
-        <div id="footerSection" className="py-3">
+        <div id="footerSection" className="pt-5 pb-3">
             <Container >
                 <Row>
                     <Col md={6}>
                         <Image src={logo} className="m-0"/>
-                        <h6 className="my-1" style={{color:"#84a9d2",fontWeight:"400",fontSize:"1rem",lineHeight:"1.5"}}>The time one talks about stock market, another word also clicks and 
+                        <h6 className="mt-3" style={{color:"#84a9d2",fontWeight:"400",fontSize:"1rem",lineHeight:"1.5"}}>The time one talks about stock market, another word also clicks and 
                         that is risk. OddStock has been initiated with an aim of providing 
                         the basic share market related information to the user.</h6>
                     </Col>
                     <Col md={3}>
                         <h4>OddStocks</h4>
-                        <ul>
-                            <li>Home</li>
-                            <li>Search Stock</li>
-                            <li>News</li>
-                        </ul>
+                        <h6>Home</h6>
+                        <h6>Search Stock</h6>
+                        <h6>News</h6>
                     </Col>
                     <Col md={3}>
                         <h4>Help</h4>
-                        <ul>
-                            <li>About</li>
-                            <li>Support</li>
-                            <li>Project Link</li>
-                            <li><GitHubIcon /></li>
-                        </ul>
+                        <h6>About</h6>
+                        <h6>Project Link</h6>
+                        <h6><GitHubIcon /></h6>
                     </Col>
                 </Row>
                 <Row className="text-center">
