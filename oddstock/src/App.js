@@ -8,6 +8,7 @@ import Search from "../src/Components/Search/Search";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
 import News from "./Components/News/News";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
     <About/>
     {/* <SignUp/>
     <Login/> */}
-    <Search/>
+    {/* <Search/> */}
     {/* <News/> */}
+    <Footer/>
     </>
   );
 }
