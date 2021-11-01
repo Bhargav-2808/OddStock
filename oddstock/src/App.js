@@ -15,11 +15,19 @@ function App() {
     <>
     <Header accountHolder="Dhruv" login={true}/>
     <About/>
+<<<<<<< HEAD
     {/* <SignUp/>
     <Login/> */}
     <Search/>
     {/* <News/> */}
     {/* <Footer/> */}
+=======
+    <SignUp/>
+    <Login/>
+    <Search/>
+    <News/>
+    <Footer/>
+>>>>>>> 898b819bca90337f3b020e1d31ebf1201f1b60a7
     </>
   );
 }
