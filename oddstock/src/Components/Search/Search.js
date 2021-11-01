@@ -1,10 +1,13 @@
 import "./Search.css";
+import buy from "../../images/buy.png";
+import sell from "../../images/sell.png";
 
 //import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 //import react from 'react'
 
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { Spellcheck } from "@material-ui/icons";
 
 const Search = () => {
   const [Search, setSearch] = useState(["SBIN"]);
@@ -24,7 +27,7 @@ const Search = () => {
     // fetchApi();
   }, [Search]);
 
-  const valueRSI = 50;
+  const valueRSI =40;
 
   return (
     <>
@@ -64,7 +67,12 @@ const Search = () => {
                 <Container className="my-3 searchContainer mt-5">
                   <Card className="card-search">
                     <Card.Body>
-                      <h4 className="centerComponent" style={{color:"#0179ff"}}>SBIN</h4>
+                      <h4
+                        className="centerComponent"
+                        style={{ color: "#0179ff" }}
+                      >
+                        SBIN
+                      </h4>
                       <Row>
                         <Col>
                           <h3>high : </h3>
@@ -74,23 +82,42 @@ const Search = () => {
                           <h3>RSI : </h3>
                         </Col>
                         <Col>
-                          {
-                            ( RSI > 50) ?(
-                              <>
-                                
-                              
-                              </>
-                            )
-                            
-                            :(
-                              <>
-                              
-                              </>
-                            )
-                            
-
-                            
-                          }
+                          {valueRSI >= 50 ? (
+                            <>
+                              <Row>
+                                <Col>
+                                  <h6 className="searchDetails">
+                                    Stock can be worth Buying for you. You can{" "}
+                                    <span style={{ color: "#0179ff" }}>
+                                      bet
+                                    </span>{" "}
+                                    on it.
+                                  </h6>
+                                </Col>
+                                <Col>
+                                  <img src={buy} className="searchImage"/>
+                                </Col>
+                              </Row>
+                            </>
+                          ) : (
+                            <>
+                              <Row>
+                                <Col>
+                                  <h6 className="searchDetails">
+                                    Stock going downwards direction. You can
+                                    look for another dtock{" "}
+                                    <span style={{ color: "#0179ff" }}>
+                                      bet
+                                    </span>{" "}
+                                    on it.
+                                  </h6>
+                                </Col>
+                                <Col>
+                                  <img src={sell} className="searchImage"/>
+                                </Col>
+                              </Row>
+                            </>
+                          )}
                         </Col>
                       </Row>
                     </Card.Body>

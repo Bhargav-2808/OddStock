@@ -18,8 +18,8 @@ function App() {
     {/* <SignUp/>
     <Login/> */}
     <Search/>
-    {/* <News/> */}
-    {/* <Footer/> */}
+    <News/> 
+    <Footer/>
     </>
   );
 }

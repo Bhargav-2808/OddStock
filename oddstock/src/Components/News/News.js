@@ -18,7 +18,7 @@ const News = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container my-5">
       <Card style={{ overflow: "auto", height: "90vh" }}>
         <Card.Body>
           {newsHeadline.map((element) => {
