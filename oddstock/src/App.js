@@ -17,9 +17,9 @@ function App() {
     <About/>
     {/* <SignUp/>
     <Login/> */}
-    {/* <Search/> */}
+    <Search/>
     {/* <News/> */}
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

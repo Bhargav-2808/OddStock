@@ -27,3 +27,15 @@
     background-image: url(../../images/searchIcon.svg);
     width: 25rem;
 }
+
+
+.card-search{
+    border: 1px solid whitesmoke ;
+    border-radius: 15px ;
+    padding: 40px;
+    box-shadow: 0 5px 30px rgb(0 120 255 / 20%);
+}
+
+.searchContainer{
+    width: 80%;
+}
