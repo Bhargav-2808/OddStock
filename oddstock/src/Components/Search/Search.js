@@ -8,17 +8,25 @@ import sell from "../../images/sell.png";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { Spellcheck } from "@material-ui/icons";
+import { useIsRTL } from "react-bootstrap/esm/ThemeProvider";
 
 const Search = () => {
   const [Search, setSearch] = useState(["SBIN"]);
   const [Stock, setStock] = useState([]);
-
+  const [RSI,setRSI] = useState([]);
   const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=BSE:${Search}&outputsize=compact&apikey=demo=B2CB6L3XPS4OUJYK`;
   //const url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a645d6723b8a4f42bd0ff76a67460c9d`;
+  
+  const urlRSI =`https://www.alphavantage.co/query?function=RSI&symbol=BSE:${Search}&interval=daily&time_period=14&series_type=open&apikey=B2CB6L3XPS4OUJYK`
+
   let fetchApi = async () => {
     let result = await fetch(url);
     let response = await result.json();
     setStock(response["Time Series (Daily)"]);
+
+    let Rresult = await fetch(urlRSI);
+    let Rresponse = await Rresult.json();
+    setRSI(Rresponse);
     // console.log(response["Time Series (Daily)"]);
     //console.log(Stock);
   };
@@ -105,11 +113,8 @@ const Search = () => {
                                 <Col>
                                   <h6 className="searchDetails">
                                     Stock going downwards direction. You can
-                                    look for another dtock{" "}
-                                    <span style={{ color: "#0179ff" }}>
-                                      bet
-                                    </span>{" "}
-                                    on it.
+                                    look for another stock.{" "}
+                                   
                                   </h6>
                                 </Col>
                                 <Col>
